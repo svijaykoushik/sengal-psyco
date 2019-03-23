@@ -1,0 +1,25 @@
+{
+  "name": "sengal-psyco",
+  "version": "0.0.1",
+  "description": "A html5 breakout clone in vanila js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svijaykoushik/sengal-psyco.git"
+  },
+  "keywords": [
+    "html5",
+    "javscript",
+    "html5",
+    "games"
+  ],
+  "author": "Vijaykoushik, S.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svijaykoushik/sengal-psyco/issues"
+  },
+  "homepage": "https://github.com/svijaykoushik/sengal-psyco#readme"
+}
