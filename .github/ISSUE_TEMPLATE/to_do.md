@@ -1,8 +1,8 @@
 ---
-name: Task
+name: To do
 about: A task for the team during development cycle
-title: Task
-labels: task
+title: To do
+labels: development-task
 assignees: svijaykoushik
 
 ---
