@@ -1,10 +1,10 @@
 {
   "name": "sengal-psyco",
   "version": "0.0.1",
-  "description": "A html5 breakout clone in vanila js",
+  "description": "A html5 breakout clone in vanilla js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,17 @@
   "bugs": {
     "url": "https://github.com/svijaykoushik/sengal-psyco/issues"
   },
-  "homepage": "https://github.com/svijaykoushik/sengal-psyco#readme"
+  "homepage": "https://github.com/svijaykoushik/sengal-psyco#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.1.0",
+    "gulp-mocha": "^6.0.0",
+    "mocha": "^6.0.2",
+    "sinon": "^7.3.1"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  }
 }
