@@ -1,7 +1,7 @@
 # sengal-psyco
 A breakout style game in vanilla js
 
-![Project status](https://img.shields.io/badge/Project%20status-Elaboration%20phase-9cf.svg)
+![Project status](https://img.shields.io/badge/Project%20status-Development%20phase-9cf.svg)
 
 **Story line:** Sengal-psyco has kidnapped the protagonist's love interest and it's up to the protagonist to save their love interest.
 
