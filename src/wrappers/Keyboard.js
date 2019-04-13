@@ -3,15 +3,18 @@
  * @author Vijaykoushik, S. <svijaykoushik@hotmail.com>
  */
 
+ import DOMEvents from "./DOMEvents.js";
+
 /**
  * A wrapper class for DOM keyboard events.
  */
-export class Keyboard{
+export class Keyboard extends DOMEvents{
     /**
      * create a keyboard wrapper.
      * @param {Element} targetElement The target element to which the event listener has to be attached.
      */
     constructor(targetElement){
+        super();
         this._eventTarget = targetElement;
     }
 
@@ -20,7 +23,7 @@ export class Keyboard{
      * @param {function} listenerCallback The event listener callback function to be executed when the keyup event is fired.
      */
     addKeyDownListener(listenerCallback){
-        this._eventTarget.addEventListener("keydown", listenerCallback);
+        super.addListener(_eventTarget, super.supportedEvents.KEY_DOWN, listenerCallback);
     }
     
 
@@ -29,7 +32,7 @@ export class Keyboard{
      * @param {function} listenerCallback The event listener callback function to be executed when the keyup event is fired.
      */
     addKeyUpListener(listenerCallback){
-        this._eventTarget.addEventListener("keyup", listenerCallback);
+        super.addListener(_eventTarget, super.supportedEvents.KEY_UP, listenerCallback);
     }
 
     /**
@@ -38,7 +41,7 @@ export class Keyboard{
      * @param {function} listenerCallback The previously added listener callback that needs to be removed.
      */
     removeKeyDownListener(listenerCallback){
-        this._eventTarget.removeEventListener("keydown", listenerCallback);
+        super.removeListener(_eventTarget, super.supportedEvents.KEY_DOWN, listenerCallback);
     }
 
     /**
@@ -47,6 +50,6 @@ export class Keyboard{
      * @param {function} listenerCallback The previously added listener callback that needs to be removed
      */
     removeKeyUpListener(listenerCallback){
-        this._eventTarget.removeEventListener("keyup", listenerCallback);
+        super.removeListener(_eventTarget, super.supportedEvents.KEY_UP, listenerCallback);
     }
 }
