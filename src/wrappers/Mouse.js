@@ -8,7 +8,7 @@
  /**
   * Wrapper for DOM mouse events
   */
- export class Mouse extends DOMEvents{
+ class Mouse extends DOMEvents{
 
     /**
      * Creates a mouse wrapper
@@ -67,3 +67,5 @@
         super.removeListener(_eventTarget, super.supportedEvents.MOUSE_MOVE, listenerCallback);
      }
  }
+
+ export default Mouse;

@@ -1,12 +1,15 @@
 /**
  * @module wrappers/DOMEvents.js
+ * @author Vijaykoushik, S. <svijaykoushik@hotmail.com>
  */
 
-export class DOMEvents{
+class DOMEvents{
 
     constructor(){
         /**
          * An enumeration of supported events
+         * @readonly
+         * @enum {string}
          */
         this.supportedEvents = {
             "KEY_DOWN": "keydown",
@@ -47,3 +50,5 @@ export class DOMEvents{
         target.removeEventListener(event, eventCallback);
     }
 }
+
+export default DOMEvents;

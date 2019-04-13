@@ -8,7 +8,7 @@
 /**
  * A wrapper class for DOM keyboard events.
  */
-export class Keyboard extends DOMEvents{
+class Keyboard extends DOMEvents{
     /**
      * create a keyboard wrapper.
      * @param {Element} targetElement The target element to which the event listener has to be attached.
@@ -53,3 +53,5 @@ export class Keyboard extends DOMEvents{
         super.removeListener(_eventTarget, super.supportedEvents.KEY_UP, listenerCallback);
     }
 }
+
+export default Keyboard;

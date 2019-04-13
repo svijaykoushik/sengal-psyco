@@ -5,13 +5,21 @@
 
  import DOMEvents from "./DOMEvents.js";
 
- export class Touch extends DOMEvents{
+ /**
+  * A wrapper for DOM touch events for touch screen devices.
+  */
+ class Touch extends DOMEvents{
     /**
      * Creates a touch wrapper.
      * @param {Element} targetElement The target element to  which the event listener has to be attached.
      */
     constructor(targetElement){
         super();
+        /**
+         * The target element to which the event listener has to be attached.
+         * @type {Element}
+         * @private
+         */
         this._eventTarget = targetElement;
     }
 
@@ -79,3 +87,5 @@
         super.removeListener(_eventTarget, super.supportedEvents.TOUCH_MOVE, listenerCallback);
     }
  }
+
+ export default Touch;
