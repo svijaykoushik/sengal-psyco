@@ -73,5 +73,6 @@ A breakout style game in vanilla js
 
 ## Milestones
 
-1. Create core game physics.
-2. Create core game mechanics.
+1. Create wrapper modules. ✅
+2. Create core game physics.
+3. Create core game mechanics.
