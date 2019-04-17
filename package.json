@@ -4,7 +4,7 @@
   "description": "A html5 breakout clone in vanilla js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/svijaykoushik/sengal-psyco#readme",
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
     "chai": "^4.2.0",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.1.0",
