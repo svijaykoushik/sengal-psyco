@@ -76,7 +76,7 @@ class Touch extends DOMEvents {
      * Removes the previously added event listener function using addTouchCancelListener for touchcancel event.
      * @param {EventListenerObject} The previously added event listener callback that needs to be removed.
      */
-    removeTouchCancelListener(listenerCallback) {
+    removeTouchCancelListener(listenerCallback: EventListenerObject) {
         super.removeListener(this._eventTarget, DOMEvents.Events.TOUCH_CANCEL, listenerCallback);
     }
 
@@ -84,7 +84,7 @@ class Touch extends DOMEvents {
      * Removes the previously added event listener function using addMouseTouchMoveListener for touchmove event.
      * @param {EventListenerObject} The previously added event listener callback that needs to be removed.
      */
-    removeTouchMoveListener(listenerCallback) {
+    removeTouchMoveListener(listenerCallback: EventListenerObject) {
         super.removeListener(this._eventTarget, DOMEvents.Events.TOUCH_MOVE, listenerCallback);
     }
 }

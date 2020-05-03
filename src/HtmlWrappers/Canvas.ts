@@ -37,7 +37,7 @@ class Canvas {
          * @readonly
          * @type{CanvasRenderingContext2D}
          */
-        this.renderingContext2D = this.canvasElement.getContext("2d");
+        this.renderingContext2D = this.canvasElement.getContext("2d") as CanvasRenderingContext2D;
     }
 
     /**
