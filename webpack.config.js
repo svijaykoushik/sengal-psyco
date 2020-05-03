@@ -1,6 +1,6 @@
 const path = require("path");
 module.exports = {
-    entry: './src/main.ts',
+    entry: path.resolve(__dirname, './src'),
     mode: 'development',
     module: {
         rules: [
@@ -11,7 +11,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extentions: ['.ts']
+        extensions: ['.ts']
     },
     output: {
         filename: 'bundle.js',
