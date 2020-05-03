@@ -4,7 +4,8 @@
   "description": "A html5 breakout clone in vanilla js",
   "main": "index.js",
   "scripts": {
-    "test": "env TS_NODE_PROJECT=\"tsconfig.spec.json\" mocha --require ts-node/register 'test/**/*.spec.ts'"
+    "test": "env TS_NODE_PROJECT=\"tsconfig.spec.json\" mocha --require ts-node/register 'test/**/*.spec.ts'",
+    "bundle:dev": "webpack-cli"
   },
   "repository": {
     "type": "git",
